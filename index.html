@@ -379,5 +379,72 @@ Cependant, la consommation reste le principal segment où le gâchis se produit.
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
+
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
 </body>
 </html>
+
+<!-- JS pour le quizz -->
+<script type="text/javascript">
+  (function(){
+  //-------------------------------------------------------------
+  // Début du script        
+      var clics = document.querySelectorAll('.fenetreQuestion'),  // Récupération de toutes les fenêtres de question
+          Reponse = {                                               // Création d'un prototype contenant la fenêtre mère parente et le clic
+          init:function(bloc,result){
+              this.fenetre = bloc ;
+              this.result = result ;
+          }
+          },
+          reponse = Object.create(Reponse),                       // Création de l'objet réponse
+          infogra, question,                               // Création des variables utilisées dans la boucle (comm)
+          action = function(){
+              question.style.WebkitFilter = 'opacity(0%)' ;     // On désaffiche la fenêtre question
+              infogra.style.WebkitFilter = 'none' ;            // On enlève le flous sur les infographies
+           //   comm.style.WebkitFilter = 'none' ;
+              
+              question.style.filter = 'opacity(0%)' ;     // On désaffiche la fenêtre question
+              infogra.style.filter = 'none' ;            // On enlève le flous sur les infographies
+           //   comm.style.filter = 'none' ;
+              
+              question.style.zIndex = '-1' ;  // On passe la fenêtre question derrière pour pas pouvoir cliquer dessus
+          },
+          comLat = document.getElementById('comLat')
+          ;
+  
+      for (i=0, n=clics.length; i<n; i++) {                       // On 'prépare à l'écoute' toutes les fenêtres de la page
+          clics[i].addEventListener('click',function(e){
+  
+              if (e.target.className === 'reponseV') {                    // On récupère true si cliqué sur V, false si cliqué sur F
+                  reponse.init(e.target.parentNode.parentNode,true);      // et un caractère vide si cliqué ailleurs dans la fenêtre
+              } else if (e.target.className === 'reponseF') {
+                  reponse.init(e.target.parentNode.parentNode,false);
+              } else {
+                  reponse.init(e.target.parentNode.parentNode,'erreur');
+              }
+  
+  
+              if (e.target.className === 'reponseV') {                    // On récupère true si cliqué sur V, false si cliqué sur F
+                  var larep = "Vrai";      // et un caractère vide si cliqué ailleurs dans la fenêtre
+              } else if (e.target.className === 'reponseF') {
+                var larep = "Faux";
+              } else {
+                var larep = "Erreur";
+              }
+          
+              idFenetre = reponse.fenetre.id ;
+          
+              if (reponse.result != 'erreur') {                                  // On ne modifie le CSS que si l'utilisateur a répondu
+                  infogra = document.querySelector("#" + idFenetre + " .infographie") ;   // On enregistre les trois enfants de la fenêtre mère
+                  question = document.querySelector("#" + idFenetre + " .fenetreQuestion") ;      // On récupère l'élément question
+                  //comm = document.querySelector("#"+ idFenetre + " .commentaire") ;       // On récupère le commentaire de réponse
+                  noQuestion = idFenetre.charAt(5) - 1;
+          //        (reponse.result) ? comm.innerHTML = textes.vrai[noQuestion]: comm.innerHTML = textes.faux[noQuestion] ; 
+                  setTimeout(action,200) ;
+                  alert(larep)
+              }
+          });
+      }
+  })();
+  </script>
