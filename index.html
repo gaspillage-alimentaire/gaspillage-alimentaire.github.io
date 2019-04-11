@@ -25,6 +25,41 @@ Licence URI: https://www.os-templates.com/template-terms
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
 
+<!-- CSS DU QUIZZ-->
+	
+ <style>
+.fenetreQuestion {
+  display:block;
+  position:absolute;
+  top : 10%;
+  left: 15%;
+  width: 70%;
+  
+  -webkit-transition : -webkit- filter 2s ;
+  -moz-transition :  filter 2s ;
+  -o-transition : -webkit- filter 2s ;
+  
+}
+.question{
+  text-align:center;
+  margin : 20px auto 20px auto;
+  width:70%;
+}
+.reponseV,.reponseF {
+  width: 50%;
+  color : rgb(255, 250, 250);
+  border-radius: 25px;
+  background: rgba(2, 40, 48, 0.685);
+  padding: 10px 15px ;
+  margin: 20px auto 10px auto ;
+  text-align:center;
+}
+.reponseV:hover,.reponseF:hover {
+  font-size: 0.9em ;
+  cursor:pointer;
+}
+ </style>
+	
 </head>
 	
 <body id="top">
@@ -95,9 +130,59 @@ Licence URI: https://www.os-templates.com/template-terms
 	    Le gaspillage intervient tout au long de la chaîne d'approvisionnement. 5 phases sont ainsi identifiées : 
 	    production agricole, transformation, distribution, restauration (collective et commerciale), consommation.
 	  </p>
-			
-	   <iframe height='50' src='http://www.theworldcounts.com/counters/world_food_consumption_statistics/world_food_waste_statistics/embed?background_color=grey&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14&token=c680c2a439091933530a6030093a2d66016de651' style='border: none' width='150'></iframe>
-	
+
+<!--Quiz-->			
+  <div class="section-header">          
+		  <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.2s"> <br> </p>
+          <hr class="lines wow zoomIn" data-wow-delay="0.2s">
+		  <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.2s"> <br> </p>
+          <h3 class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.2s"> <span style=" font-size:20px; font-weight:bold; color:#005DA8"> Quiz 1 Title </span></h3>
+  </div>
+
+  
+  <div id="quizz3" class="fenetre">
+          <div class="infographie" >
+          		<div class="container">
+                  <div class="row">     
+                    <div class="col-lg-6 col-sm-6 col-xs-12">
+          
+                      <div>
+                        <div>
+                          <p><br> <br>
+                            Explanation of the correct answer comes here.
+
+                          </p>
+
+                        </div>
+                </div>
+        
+                    </div>  
+                
+                    <div class="col-lg-6 col-sm-6 col-xs-12">
+              
+                      <div>
+                        <div>
+                            <!-- graphe 15 interactif-->
+                  <div id="graphe15" style="height: 370px; width: 100%;"></div>
+                        </div>
+                </div>
+                
+                    </div>
+              
+                  </div>
+                </div>    
+          </div>
+          <div class="fenetreQuestion">	
+			 
+              <div class="question"> The content of the question comes here. </div>
+              <div class="reponseF">wrong answer choice</div>
+              <div class="reponseF">wrong answer choice2</div>
+              <div class="reponseV">correct answer choice</div>
+			  
+          </div>
+      </div>
+<!--/Quiz-->
+		
 	  <p> [Comment] Quiz2 comes here<br>	
 	    QUIZ2 : D’après vous, au cours de quelle phase observe-t-on la perte la plus importante?	
 	  </p>	
