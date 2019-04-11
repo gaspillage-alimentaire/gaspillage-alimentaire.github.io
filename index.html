@@ -9,11 +9,71 @@ Licence URI: https://www.os-templates.com/template-terms
 <html lang="">
 <!-- To declare your language - read more here: https://www.w3.org/International/questions/qa-html-language-declarations -->
 <head>
+	
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-138165791-1"></script>
+   <script>
+   window.dataLayer = window.dataLayer || [];
+   function gtag(){dataLayer.push(arguments);}
+   gtag('js', new Date());
+
+   gtag('config', 'UA-138165791-1');
+   </script>
+	
 <title>Gaspillage Alimentaire</title>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+
+<!-- CSS DU QUIZZ-->
+	
+ <style>
+	 
+.infographie {
+  display:block;
+  width : 100%;
+  padding : 0px 0px ;
+  margin : 20px 0px 0px 0px ;
+  filter: blur(15px) grayscale(80%) opacity(40%);
+  -webkit-filter: blur(15px) grayscale(80%) opacity(40%);
+  -webkit-transition : -webkit-filter 2s ;
+  -moz-transition : filter 2s ;
+  -o-transition : -webkit-filter 2s ;
+}
+.fenetreQuestion {
+  display:block;
+  position:absolute;
+  top : 10%;
+  left: 15%;
+  width: 70%;
+  
+  -webkit-transition : -webkit- filter 2s ;
+  -moz-transition :  filter 2s ;
+  -o-transition : -webkit- filter 2s ;
+  
+}
+.question{
+  text-align:center;
+  margin : 20px auto 20px auto;
+  width:70%;
+}
+.reponseV,.reponseF {
+  width: 50%;
+  color : rgb(255, 250, 250);
+  border-radius: 25px;
+  background: rgba(2, 40, 48, 0.685);
+  padding: 10px 15px ;
+  margin: 20px auto 10px auto ;
+  text-align:center;
+}
+.reponseV:hover,.reponseF:hover {
+  font-size: 0.9em ;
+  cursor:pointer;
+}
+ </style>
+	
 </head>
+	
 <body id="top">
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
@@ -23,32 +83,9 @@ Licence URI: https://www.os-templates.com/template-terms
     <!-- ################################################################################################ -->
     <ul class="clear">
       <li class="active"><a href="index.html">Home</a></li>
-      <li><a class="drop" href="#">Pages</a>
-        <ul>
-          <li><a href="pages/gallery.html">Gallery</a></li>
-          <li><a href="pages/full-width.html">Full Width</a></li>
-          <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
-          <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
-          <li><a href="pages/basic-grid.html">Basic Grid</a></li>
-        </ul>
-      </li>
-      <li><a class="drop" href="#">Dropdown</a>
-        <ul>
-          <li><a href="#">Level 2</a></li>
-          <li><a class="drop" href="#">Level 2 + Drop</a>
-            <ul>
-              <li><a href="#">Level 3</a></li>
-              <li><a href="#">Level 3</a></li>
-              <li><a href="#">Level 3</a></li>
-            </ul>
-          </li>
-          <li><a href="#">Level 2</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Link Text</a></li>
-      <li><a href="#">Link Text</a></li>
-      <li><a href="#">Link Text</a></li>
-      <li><a href="#">Long Link Text</a></li>
+      <li><a href="#">Dans le monde</a></li>
+      <li><a href="#">En France</a></li>
+      <li><a href="#">Les mesures</a></li>
     </ul>
     <!-- ################################################################################################ -->
   </nav>
@@ -93,18 +130,81 @@ Licence URI: https://www.os-templates.com/template-terms
     <div class="sectiontitle">
       <h6 class="heading">Les aliments gaspillés dans le monde</h6>
     </div>
-    <ul class="nospace group">
         <article>
-          <p> [Comment] Quiz comes here<br>
-            Plus de 41.2 kilos de nourriture sont jetés chaque seconde (compteur) dans le monde. 
-            Cela représente un gaspillage alimentaire de 1,3 milliard de tonnes d'aliments par an, 
-            soit 1/3 de la production globale de denrées alimentaires dédiée à la consommation. 
-            Le gaspillage alimentaire concerne les pays riches comme pauvres et représenterait une valeur gaspillée de 750 milliards de dollars.
+          <p> [Comment] Quiz1 comes here<br>
+            Plus de 41.2 kilos de nourriture sont jetés chaque seconde dans le monde. Cela représente un gaspillage alimentaire
+	    de 1,3 milliard de tonnes d'aliments par an, soit 1/3 de la production globale de denrées alimentaires dédiée à la 
+	    consommation. Ce gaspillage concerne les pays riches comme pauvres et représenterait une valeur de 750 milliards de dollars. 
+	    C’est un scandale éthique, environnemental et économique.
           </p>
+	  <p>
+	    Le gaspillage intervient tout au long de la chaîne d'approvisionnement. 5 phases sont ainsi identifiées : 
+	    production agricole, transformation, distribution, restauration (collective et commerciale), consommation.
+	  </p>
+
+<!--Quiz-->
+    <div class="sectiontitle">
+      <h6 class="heading">nanana</h6>
+    </div>
+  <div class="section-header">          
+		  <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.2s"> <br> </p>
+          <hr class="lines wow zoomIn" data-wow-delay="0.2s">
+		  <p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.2s"> <br> </p>
+          <h3 class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.2s"> <span style="font-size:20px; font-weight:bold; color:#005DA8">  First question's title </span> <br><br></h3>   
+  </div>
+  
+  <div id="quizz1" class="fenetre">
+    <div class="infographie" > 
+     <!-- Début rep -->		
+		<div class="container">
+        <div class="row">     
+          <div class="col-lg-6 col-sm-6 col-xs-12">
+
+            <div>
+              <!-- <h3>titre</h3> -->
+              <div> <br> <br> <br>
+                <p>Les femmes consomment bien plus de médicaments destinés au système génito-urinaire et de médicaments hormonaux que les hommes. Elles ont, par exemple recours à des moyens de contraception hormonaux tels que la pilule contraceptive. Cependant, cette différence est due au fait qu'elles en consomment bien plus avant 60 ans puisqu'après 60 ans, ce sont les hommes qui en consomment davantage.</p>
+              </div>
+      </div>
+
+          </div>  
+      
+      
+          <div class="col-lg-6 col-sm-6 col-xs-12">
+    
+            <div>
+              <div>
+        <!-- graphe 7 interactif-->
+        <div id="graphe14" style="height: 300px; width: 500px;"></div></center> 
+        
+
+              </div>
+      </div>
+      
+          </div>
+    
+        </div>
+    </div>
+<!-- Fin rep -->   
+    </div>
+    <div class="fenetreQuestion">
+
+		<p class="section-subtitle wow fadeIn" data-wow-duration="1000ms" data-wow-delay="0.2s"> 
+        <div class="question">Qui consomme le plus de médicaments du système génito-urinaire et hormonaux ?</div>
+        <div class="reponseF">Les hommes</div>
+        <div class="reponseV">Les femmes</div>
+
+    </div>
+</div>
+<!--/Quiz-->
 		
-	   <iframe height='100' src='http://www.theworldcounts.com/counters/world_food_consumption_statistics/world_food_waste_statistics/embed?background_color=white&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14&token=c680c2a439091933530a6030093a2d66016de651' style='border: none' width='300'></iframe>	
-	   <iframe height='50' src='http://www.theworldcounts.com/counters/world_food_consumption_statistics/world_food_waste_statistics/embed?background_color=grey&color=black&font_family=%22Helvetica+Neue%22%2C+Arial%2C+sans-serif&font_size=14&token=c680c2a439091933530a6030093a2d66016de651' style='border: none' width='150'></iframe>
-	
+	  <p> [Comment] Quiz2 comes here<br>	
+	    QUIZ2 : D’après vous, au cours de quelle phase observe-t-on la perte la plus importante?	
+	  </p>	
+
+    <div class="sectiontitle">
+      <h6 class="heading"></h6>
+    </div>
            <div class="infogram-embed" data-id="c17b5762-8c34-42e2-b7c5-1a62a4a30201" data-type="interactive" data-title="Repartition"></div>
 		<script>!function(e,t,s,i){var n="InfogramEmbeds",o=e.getElementsByTagName("script")[0],d=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(i)&&(i=d+i),window[n]&&window[n].initialized)window[n].process&&window[n].process();else if(!e.getElementById(s)){var r=e.createElement("script");r.async=1,r.id=s,r.src=i,o.parentNode.insertBefore(r,o)}}(document,0,"infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script><div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px"><a href="https://infogram.com/c17b5762-8c34-42e2-b7c5-1a62a4a30201" style="color:#989898!important;text-decoration:none!important;" target="_blank">Repartition</a><br>
 		<a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow">Infogram</a></div>
@@ -135,8 +235,13 @@ Licence URI: https://www.os-templates.com/template-terms
 		    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
 	    </script>
 	    
-      </li>
-    </ul>
+	  <p>[Comment] 
+	    <iframe title="" aria-label="World Symbol map" id="datawrapper-chart-YWiNU" src="//datawrapper.dwcdn.net/YWiNU/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important;" height="600">
+	    </iframe>
+	    <script type="text/javascript">!function(){"use strict";window.addEventListener("message",function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}})}();
+	    </script>
+	  </p>
+
     <!-- ################################################################################################ -->
     <!-- / main body -->
     <div class="clear"></div>
@@ -175,8 +280,7 @@ Licence URI: https://www.os-templates.com/template-terms
 		      var scriptElement = document.createElement('script');                    
 		      scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
 		      vizElement.parentNode.insertBefore(scriptElement, vizElement);                
-	      </script>
-	    
+	      </script>    
       </li>
     </ul>
     <!-- ################################################################################################ -->
@@ -224,98 +328,52 @@ Licence URI: https://www.os-templates.com/template-terms
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
+<ul class="nospace group">
+        <article>
+          <p> 
+            Les initiatives et campagnes de sensibilisation fleurissent de toute part et dans toutes les régions du monde. 
+	    Mais la France est leader dans les mesures déjà engagées dans ce domaine.
+          </p>
+	  <p> 
+	      <div class="infogram-embed" data-id="60aea7e0-3bc9-483b-a878-ab86c4a2dc22" data-type="interactive" data-title="timeline"></div>
+	      <script>!function(e,t,s,i){var n="InfogramEmbeds",o=e.getElementsByTagName("script")[0],d=/^http:/.test(e.location)?"http:":"https:";if(/^\/{2}/.test(i)&&(i=d+i),window[n]&&window[n].initialized)window[n].process&&window[n].process();
+					 else if(!e.getElementById(s)){var r=e.createElement("script");r.async=1,r.id=s,r.src=i,o.parentNode.insertBefore(r,o)}}(document,0,"infogram-async","https://e.infogram.com/js/dist/embed-loader-min.js");</script>
+	      <div style="padding:8px 0;font-family:Arial!important;font-size:13px!important;line-height:15px!important;text-align:center;border-top:1px solid #dadada;margin:0 30px">
+		      <a href="https://infogram.com/60aea7e0-3bc9-483b-a878-ab86c4a2dc22" style="color:#989898!important;text-decoration:none!important;" target="_blank">timeline</a><br>
+		      <a href="https://infogram.com" style="color:#989898!important;text-decoration:none!important;" target="_blank" rel="nofollow"></div>	
+	  </p>
+ 	</article>
+</ul>
+
+
 <div class="wrapper bgded overlay" style="background-image:url('images/demo/backgrounds/03.png');">
   <div class="hoc container testimonials clear">
     <!-- ################################################################################################ -->
-    <article><img src="images/demo/100x100.png" alt="">
-      <blockquote>In eu tortor nisi curabitur quis dui nam bibendum lectus diam dictum tincidunt ullamcorper dui et ante venenatis euismod aenean quis vulputate velit elit dolor eget.</blockquote>
-      <h6 class="heading font-x1">E. Doe</h6>
-      <em>Nulla sed imperdiet</em></article>
+    <article>
+      <blockquote>
+	L’année 2016 a donc marquée un tournant réglementaire en matière de gaspillage qui place l’Hexagone sur le podium du classement effectué par le Food Sustainability Index.<br>
+	 <br>
+	Certaines entreprises ont mis en place des mesures astucieuses locales et internationnales pour limiter le gaspillage. En voici 3 exemples concrets:
+	<br>
+	<br>
+•	avec son initiative des « fruits et légumes moches » lancée en 2014, Intermarché redonne une chance à des produits mal calibrés ;<br><br>
+•	le distributeur britannique Tesco recycle ses aliments périmés en nourriture pour animaux et son huile usagée en biodiesel ;<br><br>
+•	à Taïwan, Carrefour a ouvert un restaurant où sont cuisinés les produits invendus de ses fournisseurs ou magasins<br>
+<br>
+Cependant, la consommation reste le principal segment où le gâchis se produit.
+
     <!-- ################################################################################################ -->
   </div>
 </div>
+
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <div class="wrapper row3">
-  <div class="hoc container clear">
-    <!-- ################################################################################################ -->
-    <div class="sectiontitle">
-      <h6 class="heading">Auctor risus integer</h6>
-    </div>
-    <ul class="nospace group latest">
-      <li class="one_third first">
-        <article>
-          <figure><a class="imgover" href="#"><img src="images/demo/320x220.png" alt=""></a></figure>
-          <div class="txtwrap">
-            <h4 class="heading"><a href="#">Vulputate curabitur</a></h4>
-            <ul class="nospace meta">
-              <li><i class="fa fa-user"></i> <a href="#">Admin</a></li>
-              <li><i class="fa fa-tag"></i> <a href="#">Category Name</a></li>
-            </ul>
-            <p>Ut est elit donec tempor est id cursus auctor quisque bibendum orci a lectus lacinia feugiat vestibulum ante ipsum [&hellip;]</p>
-          </div>
-        </article>
-      </li>
-      <li class="one_third">
-        <article>
-          <figure><a class="imgover" href="#"><img src="images/demo/320x220.png" alt=""></a></figure>
-          <div class="txtwrap">
-            <h4 class="heading"><a href="#">Mattis leo condimentum</a></h4>
-            <ul class="nospace meta">
-              <li><i class="fa fa-user"></i> <a href="#">Admin</a></li>
-              <li><i class="fa fa-tag"></i> <a href="#">Category Name</a></li>
-            </ul>
-            <p>Primis in faucibus orci luctus et ultrices posuere cubilia curae curabitur porttitor turpis quis posuere pulvinar nisl [&hellip;]</p>
-          </div>
-        </article>
-      </li>
-      <li class="one_third">
-        <article>
-          <figure><a class="imgover" href="#"><img src="images/demo/320x220.png" alt=""></a></figure>
-          <div class="txtwrap">
-            <h4 class="heading"><a href="#">Scelerisque maecenas</a></h4>
-            <ul class="nospace meta">
-              <li><i class="fa fa-user"></i> <a href="#">Admin</a></li>
-              <li><i class="fa fa-tag"></i> <a href="#">Category Name</a></li>
-            </ul>
-            <p>Erat scelerisque arcu malesuada feugiat eros dui a magna proin quis tortor fringilla eleifend sem non scelerisque eros [&hellip;]</p>
-          </div>
-        </article>
-      </li>
-    </ul>
-    <!-- ################################################################################################ -->
-  </div>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row2">
-  <article class="hoc container cta clear">
-    <!-- ################################################################################################ -->
-    <h3 class="heading">Suspendisse facilisis</h3>
-    <p>Tellus ut accumsan curabitur commodo.</p>
-    <footer><a class="btn" href="#">Dignissim tincidunt</a></footer>
-    <!-- ################################################################################################ -->
-  </article>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<div class="wrapper row4">
   <footer id="footer" class="hoc clear">
     <!-- ################################################################################################ -->
-    <div class="one_third first">
-      <h6 class="heading">Luctus turpis interdum</h6>
-      <ul class="nospace btmspace-30 linklist contact">
-        <li><i class="fa fa-map-marker"></i>
-          <address>
-          Street Name &amp; Number, Town, Postcode/Zip
-          </address>
-        </li>
-        <li><i class="fa fa-phone"></i> +00 (123) 456 7890</li>
-        <li><i class="fa fa-envelope-o"></i> info@domain.com</li>
-      </ul>
+    <div class="nospace group">
+      <h6 class="heading">Share this page</h6>
       <ul class="faico clear">
         <li><a class="faicon-facebook" href="#"><i class="fa fa-facebook"></i></a></li>
         <li><a class="faicon-twitter" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -325,58 +383,86 @@ Licence URI: https://www.os-templates.com/template-terms
         <li><a class="faicon-vk" href="#"><i class="fa fa-vk"></i></a></li>
       </ul>
     </div>
-    <div class="one_third">
-      <h6 class="heading">Facilisis morbi interdum</h6>
-      <ul class="nospace linklist">
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">volutpat maximus vel</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-06">Friday, 6<sup>th</sup> April 2045</time>
-            <p class="nospace">Primis in faucibus nam dictum malesuada dictum maecenas in magna arcu [&hellip;]</p>
-          </article>
-        </li>
-        <li>
-          <article>
-            <h2 class="nospace font-x1"><a href="#">et malesuada fames ante</a></h2>
-            <time class="font-xs block btmspace-10" datetime="2045-04-05">Thursday, 5<sup>th</sup> April 2045</time>
-            <p class="nospace">Nullam tortor ligula lobortis pharetra leo vel malesuada auctor odio nunc [&hellip;]</p>
-          </article>
-        </li>
-      </ul>
-    </div>
-    <div class="one_third">
-      <h6 class="heading">Justo condimentum tortor</h6>
-      <p class="nospace btmspace-30">Non condimentum lectus proin consequat eleifend elementum quisque nulla.</p>
-      <form method="post" action="#">
-        <fieldset>
-          <legend>Newsletter:</legend>
-          <input class="btmspace-15" type="text" value="" placeholder="Name">
-          <input class="btmspace-15" type="text" value="" placeholder="Email">
-          <button type="submit" value="submit">Submit</button>
-        </fieldset>
-      </form>
-    </div>
+    
     <!-- ################################################################################################ -->
   </footer>
 </div>
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
 <!-- ################################################################################################ -->
-<div class="wrapper row5">
-  <div id="copyright" class="hoc clear">
-    <!-- ################################################################################################ -->
-    <p class="fl_left">Copyright &copy; 2018 - All Rights Reserved - <a href="#">Domain Name</a></p>
-    <p class="fl_right">Template by <a target="_blank" href="https://www.os-templates.com/" title="Free Website Templates">OS Templates</a></p>
-    <!-- ################################################################################################ -->
-  </div>
-</div>
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
-<!-- ################################################################################################ -->
+
 <a id="backtotop" href="#top"><i class="fa fa-chevron-up"></i></a>
 <!-- JAVASCRIPTS -->
 <script src="layout/scripts/jquery.min.js"></script>
 <script src="layout/scripts/jquery.backtotop.js"></script>
 <script src="layout/scripts/jquery.mobilemenu.js"></script>
+<script src="js/wow.js"></script>
+
+<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
 </body>
 </html>
+
+<!-- JS pour le quizz -->
+<script type="text/javascript">
+  (function(){
+  //-------------------------------------------------------------
+  // Début du script        
+      var clics = document.querySelectorAll('.fenetreQuestion'),  // Récupération de toutes les fenêtres de question
+          Reponse = {                                               // Création d'un prototype contenant la fenêtre mère parente et le clic
+          init:function(bloc,result){
+              this.fenetre = bloc ;
+              this.result = result ;
+          }
+          },
+          reponse = Object.create(Reponse),                       // Création de l'objet réponse
+          infogra, question,                               // Création des variables utilisées dans la boucle (comm)
+          action = function(){
+              question.style.WebkitFilter = 'opacity(0%)' ;     // On désaffiche la fenêtre question
+              infogra.style.WebkitFilter = 'none' ;            // On enlève le flous sur les infographies
+           //   comm.style.WebkitFilter = 'none' ;
+              
+              question.style.filter = 'opacity(0%)' ;     // On désaffiche la fenêtre question
+              infogra.style.filter = 'none' ;            // On enlève le flous sur les infographies
+           //   comm.style.filter = 'none' ;
+              
+              question.style.zIndex = '-1' ;  // On passe la fenêtre question derrière pour pas pouvoir cliquer dessus
+          },
+          comLat = document.getElementById('comLat')
+          ;
+  
+      for (i=0, n=clics.length; i<n; i++) {                       // On 'prépare à l'écoute' toutes les fenêtres de la page
+          clics[i].addEventListener('click',function(e){
+  
+              if (e.target.className === 'reponseV') {                    // On récupère true si cliqué sur V, false si cliqué sur F
+                  reponse.init(e.target.parentNode.parentNode,true);      // et un caractère vide si cliqué ailleurs dans la fenêtre
+              } else if (e.target.className === 'reponseF') {
+                  reponse.init(e.target.parentNode.parentNode,false);
+              } else {
+                  reponse.init(e.target.parentNode.parentNode,'erreur');
+              }
+  
+  
+              if (e.target.className === 'reponseV') {                    // On récupère true si cliqué sur V, false si cliqué sur F
+                  var larep = "Vrai";      // et un caractère vide si cliqué ailleurs dans la fenêtre
+              } else if (e.target.className === 'reponseF') {
+                var larep = "Faux";
+              } else {
+                var larep = "Erreur";
+              }
+          
+              idFenetre = reponse.fenetre.id ;
+          
+              if (reponse.result != 'erreur') {                                  // On ne modifie le CSS que si l'utilisateur a répondu
+                  infogra = document.querySelector("#" + idFenetre + " .infographie") ;   // On enregistre les trois enfants de la fenêtre mère
+                  question = document.querySelector("#" + idFenetre + " .fenetreQuestion") ;      // On récupère l'élément question
+                  //comm = document.querySelector("#"+ idFenetre + " .commentaire") ;       // On récupère le commentaire de réponse
+                  noQuestion = idFenetre.charAt(5) - 1;
+          //        (reponse.result) ? comm.innerHTML = textes.vrai[noQuestion]: comm.innerHTML = textes.faux[noQuestion] ; 
+                  setTimeout(action,200) ;
+                  alert(larep)
+              }
+          });
+      }
+  })();
+  </script>
