@@ -371,7 +371,7 @@ Licence URI: https://www.os-templates.com/template-terms
                 enabled: true,
                 format: '<b>{point.name}</b>: {point.percentage:.0f} %',
                 style: {
-                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'}
+                    color: (Highcharts.theme && Highcharts.theme.daltonien) || 'black'}
             }
         }
     },
@@ -379,14 +379,14 @@ Licence URI: https://www.os-templates.com/template-terms
         name: 'Brands',
         colorByPoint: true,
         data: [{
-            name: 'Détaillants',
-            y: 5,
+            name: 'Ménages',
+            y: 42,
 	    sliced: true,
             selected: true
         }, {name: 'Industrie Alimentaire',
             y: 39
-        }, {name: 'Ménages',
-            y: 42
+        }, {name: 'Détaillants',
+	    y: 5
         }, {name: 'Restauration',
             y: 14}]}]});	  
 	  </script>	  
