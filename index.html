@@ -343,6 +343,56 @@ Licence URI: https://www.os-templates.com/template-terms
 
 <h3 class="heading">Pertes alimentaires par secteur en France (2018)</h3>
 
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<div id="container" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+
+<script type='text/javascript'>
+  Highcharts.chart('container', {
+    	chart: {
+        plotBackgroundColor: null,
+        plotBorderWidth: null,
+        plotShadow: false,
+        type: 'pie'
+    },
+    title: {
+        text: ''
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.0f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            dataLabels: {
+                enabled: true,
+                format: '<b>{point.name}</b>: {point.percentage:.0f} %',
+                style: {
+                    color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'}
+            }
+        }
+    },
+    series: [{
+        name: 'Brands',
+        colorByPoint: true,
+        data: [{
+            name: 'Détaillants',
+            y: 5,
+	    sliced: true,
+            selected: true
+        }, {name: 'Industrie Alimentaire',
+            y: 39
+        }, {name: 'Ménages',
+            y: 42
+        }, {name: 'Restauration',
+            y: 14}]}]});	  
+	  </script>	  
+	  
+	  
+	  
 <div class='tableauPlaceholder' id='viz1555159711048' style='position: relative; width: 500px; height: 400px'><noscript><a href='#'>
 	<img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ga&#47;Gaspi2&#47;Feuille1&#47;1_rss.png' style='border: none' /></a></noscript>
 	<object class='tableauViz'  style='display:none' width='500' height='400'>
